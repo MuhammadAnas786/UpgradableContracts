@@ -1,0 +1,47 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512",
+    "txHash": "0xc6badfbcbf194857de473ca817784047e14c10cd91593cd7010dd9ae3b765aa6"
+  },
+  "proxies": [
+    {
+      "address": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
+      "txHash": "0x890092ba0e7988b006bed91f3bd2bed00a1571a7117ebc4ca0c4e6e536a6fbeb",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "5b5d93b4701e213fad6292d1d1eb2520798f5332feffda8465785d320ea42ad2": {
+      "address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+      "txHash": "0x96dedfc9b08fad06e3785bd6a5d7d5dac016186e5ce8173157bc2ad3f9c4e73a",
+      "layout": {
+        "solcVersion": "0.8.17",
+        "storage": [
+          {
+            "label": "userBalances",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "Invest",
+            "src": "contracts/Invest.sol:4"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        }
+      }
+    }
+  }
+}
